@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Income Tracker</h1> 
+            <div class="common">
+                <input value="0" type="number" id="commonIncome" readonly>
+                <div class="dollar">$</div>
+            </div>
+        </header>
+        <div class="tracker">
+            <div class="fields">
+                <form name="Form">
+                    <input autocomplete="off" name="forms" class="fields" id="description" type="text"
+                        placeholder="Income Description...">
+                    <input autocomplete="off" name="forms" class="fields" id="income" type="number"
+                        placeholder="Income Value...">
+                    <input autocomplete="off" name="forms" class="fields" id="date" type="date">
+                    <button type="button" id="btn">Submit</button>
+                </form>
+            </div>
+            <div class="incomes">
+                <ul id="incomeList">
+                    <li id="noresult">No results</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>
